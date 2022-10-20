@@ -1,0 +1,33 @@
+sonar.projectKey=NodeJs
+sonar.projectVersion=1.0
+
+
+# defaults to project key
+sonar.projectName=NodeJs
+# defaults to not provided
+
+sonar.projectBaseDir=${WORKSPACE}
+
+sonar.exclusions=**/__tests__/*,**/__mocks__/*,./test/**,**/*.png ,**/*.html
+
+
+sonar.sources=./scripts/,./packages/,./Gruntfile.js
+#sonar.sources=.
+sonar.exclusions=./test/
+sonar.tests=./test/
+sonar.test.inclusions=test/**/*.spec.js,src/**/*.test.js,src/**/__tests__/*,src/**/__mocks__/*
+#sonar.test.exclusions=./test/unit/node-red/red_spec_skip.js
+
+sonar.javascript.jstest.reportsPath=coverage/
+#sonar.sources=packages/
+
+
+#sonar.language=js
+#sonar.javascript.jstests.reportsPath=coverage/lcov-report
+sonar.junit.reportPaths=coverage/
+sonar.javascript.lcov.reportPaths=coverage/lcov.info
+
+
+
+
+sonar.sourceEncoding=utf-8

@@ -1,0 +1,27 @@
+
+sonar.projectKey=GradleProjectKey
+
+# --- optional properties ---
+
+# defaults to project key
+sonar.projectName=GradleProject
+sonar.projectVersion=1.0
+
+sonar.projectBaseDir=${WORKSPACE}
+
+# defaults to not provided
+
+sonar.sources=./common-module/src/main/,./extension-module/src/main/,src/main
+
+sonar.tests=./extension-module/src/test/,src/test
+sonar.junit.reportPaths=build/test-results/test,extension-module/build/test-results/test/
+
+sonar.jacoco.reportPaths=./build/jacoco/test.exec
+
+sonar.java.binaries=./common-module/build/classes,./extension-module/build/classes,build/classes/
+
+
+sonar.libraries=build/libs,./common-module/build/libs,./extension-module/build/libs
+
+# Encoding of the source code. Default is default system encoding
+#sonar.sourceEncoding=UTF-8' 
